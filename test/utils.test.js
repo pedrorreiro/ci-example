@@ -15,3 +15,5 @@ describe('Utils', () => {
         });
     });    
 });
+
+// Teste para o build
