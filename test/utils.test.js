@@ -11,6 +11,18 @@ describe('Utils', () => {
             expect(gerarNumeroAleatorio(-1, 5))
                 .toBe(-2);
         });
+
+        test('numero intervalo certo', () => {
+
+            inicio = 1;
+            fim = 5;
+
+            expect(gerarNumeroAleatorio(inicio, fim))
+                .toBeGreaterThan(inicio-1);
+
+            expect(gerarNumeroAleatorio(inicio, fim))
+                .toBeLessThan(fim+1);
+        });
     });
 
     describe('acharCaracter', () => {
