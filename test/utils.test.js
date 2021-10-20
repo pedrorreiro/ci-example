@@ -13,6 +13,11 @@ describe('Utils', () => {
             expect(acharCaracter(-4, 'abcde', 'c'))
                 .toBe('comprimento invalido');
         });
+
+        test('caracter nao encontrado', () => {
+            expect(acharCaracter(5, 'abcde', 'f'))
+                .toBe('caracter nao encontrado');
+        });
     });    
 });
 
